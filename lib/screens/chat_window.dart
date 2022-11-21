@@ -33,7 +33,7 @@ class _ChatWindowState extends State<ChatWindow> {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.greenAccent,
-          title: const Text("Dialog"),
+          title: Text(recipient),
         ),
         body: Padding(
           padding: const EdgeInsets.all(30.0),
