@@ -65,6 +65,17 @@ class _ChatWindowState extends State<ChatWindow> {
                           ),
                           title: Text(
                               snapshot.child(messageName).value.toString()),
+                          leading: ConstrainedBox(
+                            constraints: const BoxConstraints(
+                              minWidth: 44,
+                              minHeight: 44,
+                              maxHeight: 64,
+                              maxWidth: 64
+                            ),
+                            child: Container(
+                              color: Colors.grey,
+                            ),
+                          ),
                         );
                       }
                     } else if (snapshot.child('sender').value.toString() == recipient &&
